@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="icon" type="image/icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+<form id="form">
+    <h2>Enviar mensaje</h2>
+  <div class="field">
+    <label for="from_name">Nombre</label>
+    <input type="text" name="from_name" id="from_name" required>
+  </div>
+
+  <div class="field">
+    <label for="email_id">Correo electrónico</label>
+    <input type="email" name="email_id" id="email_id" required>
+  </div>
+
+  <div class="field">
+    <label for="subject">Asunto</label>
+    <input type="text" name="subject" id="subject" required>
+  </div>
+
+  <div class="field">
+    <label for="message">Comentarios</label>
+    <textarea name="message" id="message" rows="5" required></textarea>
+  </div>
+
+  <input type="submit" id="button" value="Enviar">
+</form>
+
+<div id="mensajeExito">¡Enviado!</div>
+
+
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('qORmoaXvnA9xR8E-u')
+</script>
+
+    <script src="main.js"></script>
+</body>
+</html>
